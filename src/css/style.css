@@ -1,0 +1,203 @@
+/*Сброс стилей*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*Другие стили*/
+.error {
+  color: red;
+  font-size: 12px;
+  display: block;
+}
+.cvv__wrapper {
+  width: 200px;
+  position: relative;
+  z-index: 179;
+  right: -140px;
+}
+body {
+  background-color: #0f0f0f;
+}
+.page {
+  width: 960px;
+  margin: 86px auto 0px;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+}
+/*Стили левого меню*/
+.left-side {
+  width: 322px;
+}
+.left-side__logo {
+  box-sizing: border-box;
+  line-height: 180px;
+  text-align: center;
+  padding: 0 0 0 0;
+  height: 163px;
+  background-color: #1f2229;
+}
+.left-side__logo-img {
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+}
+.left-side__menu {
+  height: 376px;
+  background-color: grey;
+}
+.left-side__menu-item {
+  padding: 0 0 0 30px;
+  height: 75px;
+  background-color: #1f2229;
+  line-height: 75px;
+  list-style-type: none;
+}
+.left-side__menu-item a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+.left-side__menu-item--active {
+  background-color: #2a2d37;
+}
+.left-side__menu-item--active a {
+  color: #808592;
+}
+.left-side__menu-item--exit a,
+.left-side__menu-item--account a {
+  color: #808592;
+}
+/*ВАЛИДАЦИЯ*/
+.validation {
+  width: 600px;
+  box-sizing: border-box;
+}
+.validation__top {
+  padding: 20px;
+  width: 100%;
+  background-color: #00aeef;
+}
+.validation__title {
+  font-size: 34px;
+  color: #fff;
+  padding: 0px 0 15px;
+}
+.validation__title-text {
+  font-size: 14px;
+  color: #272727;
+}
+.validation__cost {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+  background-color: #fff;
+  color: #9fabbb;
+}
+.validation__cost h3 {
+  width: 100%;
+  font-weight: normal;
+  margin: 20px 0 20px 0;
+  font-size: 16px;
+}
+.validation__info-wrap,
+.validation__info-wrap {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.validation__info-wrap span,
+.validation__info-wrap span {
+  margin: 2.5px 0;
+}
+.validation__info-wrap--right {
+  color: #373c43;
+}
+.validation__card {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+}
+.validation__card-title {
+  font-size: 22px;
+  color: #272727;
+}
+.validation__form {
+  position: relative;
+  margin: 25px 0 0 0;
+}
+.validation__form input {
+  width: 50px;
+  height: 30px;
+  border: 2px solid #e4e9ee;
+  outline: none;
+  margin: 2.5px 0;
+}
+.validation__form #cardkeeper {
+  width: 250px;
+  height: 30px;
+  padding: 2px;
+  margin: 10px 0 0 0;
+  text-transform: uppercase;
+}
+.validation__form #cardkeeper::placeholder {
+  color: #8494ab;
+}
+.validation__form label {
+  color: #8494ab;
+  font-size: 16px;
+  display: block;
+}
+.validation__form-submit {
+  margin: 45px 0 0 0;
+  padding: 12px 50px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  background-color: #95bf00;
+  border: none;
+}
+.validation__magnet-stripe {
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: #e4e9ee;
+  position: absolute;
+}
+.validation__fieldset {
+  position: relative;
+  z-index: 1;
+  border: 2px solid #e4e9ee;
+  background-color: #f7f8f8;
+  border-radius: 10px;
+  padding: 20px;
+  width: 260px;
+  height: auto;
+}
+.validation__fieldset--cvv {
+  position: absolute;
+  z-index: 0;
+  left: 165px;
+  top: 20px;
+  height: 155px;
+}
+.validation__fieldset--cvv label {
+  display: block;
+  margin: 30px 0 0 0;
+  text-align: right;
+}
+.validation__fieldset--cvv input {
+  width: 120px;
+}
+.validation__bottom-info {
+  width: 100%;
+  padding: 20px;
+  background-color: #373c43;
+}
+.validation__bottom-info p {
+  font-size: 12px;
+  color: #7f8591;
+}

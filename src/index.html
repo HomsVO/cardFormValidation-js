@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FormCardValidation</title>
+    <script src="js/validation.js"></script>
+</head>
+<body>
+    <div class="page">
+        <div class="left-side">
+            <div class="left-side__logo">
+                <img class="left-side__logo-img" src="/img/logo.svg" alt="">
+            </div>
+            <ul class="left-side__menu">
+                <li class="left-side__menu-item" ><a href="#">Первая ссылка</a></li>
+                <li class="left-side__menu-item left-side__menu-item--active"><a href="#">Вторая ссылка(активная)</a></li>
+                <li class="left-side__menu-item"><a href="#">Третья ссылка</a></li>
+                <li class="left-side__menu-item left-side__menu-item--account"><a href="#">Личный кабинет</a></li>
+                <li class="left-side__menu-item left-side__menu-item--exit"><a href="#">Выйти</a></li>
+            </ul>
+        </div>
+        <div class="validation">
+            <div class="validation__top">
+                <h1 class="validation__title">Заголовок страницы</h1>
+                <p class="validation__top-text">В отличие от пылевого и ионного хвостов, направление поступает
+                    в лимногляциальный часовой угол</p>
+            </div>
+            <div class="validation__cost">
+                <h3 class="validation__cost-info">Информация по оплате:</h3>
+                <div class="validation__info-wrap">
+                    <span class="validation__acc-number">Номер счета:</span>
+                    <span class="validation__sum">Сумма платежа:</span>
+                </div>
+                <div class="validation__info-wrap validation__info-wrap--right">
+                    <span class="validation__acc-number">87123658716587</span>
+                    <span class="validation__sum">100 руб.</span>
+                </div>
+                
+            </div>
+            <div class="validation__card">
+                <h2 class="validation__card-title">Данные банковской карты</h2>
+                <div class="validation__card-data">
+                    <form class="validation__form" id="card-form">
+                        <fieldset id="fieldset_1" class="validation__fieldset">
+                                <label for="num1">Номер карты</label>
+                                <input maxlength="4" class="validation__form-numfield" type="text" id="num1">
+                                <input maxlength="4" class="validation__form-numfield" type="text" id="num2">
+                                <input maxlength="4" class="validation__form-numfield" type="text" id="num3">
+                                <input maxlength="4" class="validation__form-numfield" type="text" id="num4">
+                                <label>Срок действия</label>
+                                <input type="text" id="month" placeholder="MM" maxlength="2"></input>
+                                <input type="text" id="year" placeholder="YY" maxlength="2"></input>
+                                <input type="text" id="cardkeeper" placeholder="Держатель карты">
+                        </fieldset>
+                        <fieldset id="fieldset_2" class="validation__fieldset validation__fieldset--cvv">
+                            <div class="validation__magnet-stripe"></div>
+                            <br>
+                            <label>Код CVV2 / CVC2</label>
+                            <br>
+                            <div class="cvv__wrapper">
+                                <input type="text" id="cvv_code" maxlength="3">
+                            </div>
+                            
+                        </fieldset>
+                        <button class="validation__form-submit">Оплатить</button>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="validation__bottom-info">
+                <p>Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.
+                   <br><br>Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.
+                    <br><br>Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.
+                    <br><br>Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
